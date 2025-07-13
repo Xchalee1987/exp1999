@@ -24,7 +24,7 @@
   --background-color: #f1f5f4; /* Background color for the entire website, including individual sections */
   --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #2d465e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #fa7592; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #08915e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -32,7 +32,7 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: rgba(255, 255, 255, 0.75);  /* The default color of the main navmenu links */
-  --nav-hover-color: #fa7592; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #08915e; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -150,7 +150,7 @@ h6 {
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
-  /* padding: 15px 0; */
+  padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -160,22 +160,13 @@ h6 {
 }
 
 .header .logo img {
-  /* max-height: 32px; */
+  max-height: 32px;
   margin-right: 8px;
 }
 
 .header .logo i {
-  font-size:100px;
-  margin-right:6px;
- 
-}
-.header .logo i img {
-  max-width:60px;
-  width:100%;
-  height:auto;
-  margin-right:6px;
-  padding:0 0 1rem 0;
- 
+  font-size: 24px;
+  margin-right: 6px;
 }
 
 .header .logo h1 {
@@ -228,7 +219,6 @@ h6 {
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
-    
   }
 
   .navmenu a i,
@@ -758,7 +748,6 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  transform:scaleX(-1);
 }
 
 .hero .hero-container .overlay {
@@ -2379,9 +2368,6 @@ section,
   margin: 0;
 }
 
-.leadership-team{
-  margin:rem;
-}
 .leadership .leadership-team {
   margin-top: 4rem;
 }
